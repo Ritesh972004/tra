@@ -1,7 +1,17 @@
+# Streamlit app + model
 streamlit==1.38.0
+
+# core scientific stack
 numpy==1.25.0
-joblib==1.3.2
 scikit-learn==1.2.2
+joblib==1.3.2
 Pillow==10.0.0
+
+# Use imageio for video; imageio-ffmpeg provides ffmpeg backend
 imageio==2.31.4
 imageio-ffmpeg==0.4.8
+
+# Ensure build and setuptools helpers are present early to avoid distutils error
+setuptools
+wheel
+distutils
